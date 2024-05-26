@@ -1,7 +1,10 @@
 return {
   "stevearc/conform.nvim",
   opts = function()
-    local opts = {
+    return {
+      formatters_by_ft = {
+        haskell = { 'ormolu' }
+      },
       formatters = {
         prettier = {
           require_cwd = true,
@@ -22,6 +25,5 @@ return {
         },
       },
     }
-    return opts
   end,
 }
