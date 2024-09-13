@@ -8,6 +8,15 @@ return {
     -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
   },
   opts = {
+    window = {
+      auto_expand_width = true,
+      file_size = {
+        enabled = false,
+      },
+      last_modified = {
+        enabled = false,
+      },
+    },
     filesystem = {
       filtered_items = {
         always_show = {
