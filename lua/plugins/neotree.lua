@@ -10,6 +10,8 @@ return {
   opts = {
     window = {
       auto_expand_width = true,
+    },
+    default_component_configs = {
       file_size = {
         enabled = false,
       },
